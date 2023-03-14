@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Committee Joining Form</title>
+	<link rel="stylesheet" href="form2Style.css">
+</head>
+<body>
+	<h1>College Committee Joining Form</h1>
+	<form action="submit-form.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="semester">Semester:</label>
+		<input type="text" id="semester" name="semester" required><br><br>
+
+		<label for="branch">Branch:</label>
+		<input type="text" id="" name="branch" required><br><br>
+
+		<label>Which committee are you interested in joining? (Please check all that apply)</label><br>
+		<input type="checkbox" id="thalaivaCommittee" name="committee[]" value="thalaivaCommittee">
+		<label for="thalaivaCommittee">Thalaiva Committee</label><br>
+		<input type="checkbox" id="bengaliCommittee" name="committee[]" value="bengaliCommittee">
+		<label for="bengaliCommittee">Bengali Committee</label><br>
+		<input type="checkbox" id="rajasthaniCommittee" name="committee[]" value="rajasthaniCommittee">
+		<label for="rajasthaniCommittee">Rajasthani Committee</label><br>
+		<input type="checkbox" id="artsCommittee" name="committee[]" value="artsCommittee">
+		<label for="artsCommittee">Arts Committee</label><br>
+		<input type="checkbox" id="westernCommittee" name="committee[]" value="westernCommittee">
+		<label for="westernCommittee">Western Committee</label><br>
+		<input type="checkbox" id="mhmCommittee" name="committee[]" value="mhmCommittee">
+		<label for="mhmCommittee">MHM Committee</label><br>
+		<input type="checkbox" id="musicCommittee" name="committee[]" value="musicCommittee">
+		<label for="musicCommittee">Music Committee</label><br>
+		<input type="checkbox" name="committee[]" id="bhangraCommittee" value="bhangraCommittee">
+		<label for="bhangraCommittee">Bhangra Committee</label><br>
+		<input type="checkbox" name="committee[]" id="coreDramatics" value="coreDramatics">
+		<label for="coreDramatics">Core Dramatics</label><br>
+		<input type="checkbox" id="other" name="committee[]" value="Other">
+		<label for="other">Other (please specify):</label>
+		<input type="text" id="other" name="other-committee"><br><br>
+
+		<label for="interests">Why are you interested in joining this committee(s)?</label><br>
+		<textarea id="interests" name="interests" rows="5" cols="50" required></textarea><br><br>
+
+		<label for="skills">What skills and experiences do you bring to this committee(s)?</label><br>
+		<textarea id="skills" name="skills" rows="5" cols="50" required></textarea><br>
+		<label for="myfile">Attach Previous Work(if any):</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+		<label for="goals">What are your goals for your involvement in this committee(s)?</label><br>
+		<textarea id="goals" name="goals" rows="5" cols="50" required></textarea><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
