@@ -1,0 +1,40 @@
+body{
+    background-color:rgba(216, 39, 39, 0.1);
+}
+hr{
+    width:90%;
+    height:2px;
+    background-color:black;
+}
+h1 {
+    background-color: rgba(216, 39, 39, 0.8);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.form{
+    margin: 12% 30% 5% 30%;
+}
+.new{
+    margin:10px 0px 0px 600px;
+}
+.img{
+    float:left;
+    height:100px;
+    margin:0px 0px 0px 20px;
+}
+a{
+    color:rgb(14, 15, 15);
+    text-decoration: wavy;
+}
+a:hover{
+    color:rgb(33, 16, 185);
+}
