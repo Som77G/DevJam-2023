@@ -6,13 +6,22 @@ hr{
     height:2px;
     background-color:black;
 }
-h1 {
+header {
     background-color: rgba(216, 39, 39, 0.8);
-    height: 8vh;
+    height: 13vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-style: italic;
+  }
+  h2{
+    margin-bottom:15px;
+    text-decoration-line: underline;
+    text-align: center;
+
+  }
+  #login{
+    margin:10px;
   }
   
   * {
