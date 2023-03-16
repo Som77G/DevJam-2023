@@ -13,7 +13,7 @@ body {
   
   /* Style the header */
   header {
-    background-color: #17f1fd;
+    background-color:lightsalmon;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -41,7 +41,7 @@ body {
   
   /* Style the navigation menu */
   nav {
-    background-color: #eb17d5;
+    background-color:rgb(15, 154, 124);
     color: #fff;
     padding: 10px;
     margin-bottom: 20px;
