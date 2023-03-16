@@ -38,7 +38,7 @@ main{
             padding: 20px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         }
-        
+        input[type="text"],
         input[type="number"],
         input[type="tel"],
         input[type="email"],
@@ -49,7 +49,7 @@ main{
             margin-bottom: 10px;
             font-size: 16px;
         }
-        
+        input[type="text"],
         input[type="number"],
         input[type="tel"],
         input[type="email"],
@@ -99,6 +99,8 @@ main{
     </header>
     <main>
         <form action="database.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
             <label for="regno">Registration no.:</label>
             <input type="number" id="regno" name="registration_no" placeholder="Enter Registration no." required>
             <label for="phone">Phone no:</label>
