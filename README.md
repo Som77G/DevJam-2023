@@ -1,5 +1,5 @@
 # Integrating Campus Committees
-### This is a sample website for MNNIT Committees. The website includes information about the various committees, their responsibilities, membership, and meeting procedures. The website also has a news section and a navigation menu to different pages.
+This is a sample website for MNNIT Committees. The website includes information about the various committees, their responsibilities, membership, and meeting procedures. The website also has a news section and a navigation menu to different pages.
 
 ## Table of contents:
 * [General info](#general-info)
