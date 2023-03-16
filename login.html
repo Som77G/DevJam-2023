@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <title>LOGIN</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <html>
@@ -17,16 +17,16 @@
     <hr>
     <main>
     <div class="form">
-        <form>
+        <form method="post" action="login.php">
             <fieldset>
                 <legend><big></big></legend>
                 <h2>Login</h2>
                 <div id="login">
-            <label><big>Email* : </big></label>
-            <input type="email" placeholder="Enter Email" name="email" required>
+            <label><big>Reg no* : </big></label>
+            <input type="number" placeholder="Enter registration no" name="registration_no" required>
             <br><br>
             <label><big>Password* :</big></label>
-            <input type="password" placeholder="Enter Password" name="pswd" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
             <br><br>
             <input type="submit" value="Login" class="btn">
         </div>
@@ -35,7 +35,7 @@
     </div>
     <div class="new">
         <u><b>New To MNNIT?</b></u> | &nbsp;
-        <a href="">Register</a> 
+        <a href="http://localhost/New%20folder/register.php">Register</a> 
         
     </div>
     </main>
