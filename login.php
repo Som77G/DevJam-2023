@@ -21,7 +21,8 @@ if (mysqli_num_rows($result) == 1) {
 	header('Location: index.html');
 } else {
 	// Display error message if login is unsuccessful
-	echo 'Invalid login details. Please try again.';
+ echo "<script> alert('Invalid login details. Please try again.') </script>";
+            echo"<script> window.open('login.html','_self')</script>";
 }
 
 // Close MySQL connection
