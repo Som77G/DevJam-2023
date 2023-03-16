@@ -1,21 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color:rgba(216, 39, 39, 0.1); ;
+    /* box-sizing: border-box; */
+    /* background-color:rgba(216, 39, 39, 0.1); */
 }
 
-header {
+/* header {
     background-color: rgba(148, 36, 36, 0.8);
     color: wheat;
     height: 0vh;
-}
+} */
 
 .heading {
     text-align: center;
-    background-color: rgba(216, 39, 39, 0.8);
+    background-color: #18d87f;
     /* border: 2px solid rgb(107, 57, 21); */
-    height: 8vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,11 +30,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(103, 206, 238);
+    background-color:  #8c2eca;
 }
 
 nav a {
-    padding: 10px;
+    padding: 25px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -53,6 +53,7 @@ nav a {
         padding: 5px;
     }
 }
+
 #_1{
     float:left;
     height:55px;
@@ -61,20 +62,92 @@ nav a {
     float:right;
     height:55px;
 } */
-footer{
-        background-color: black;
-        padding-bottom: 0px;
-        margin-top: 100px;
-        color:white;
-        text-align:center;
-      
-}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
 .f{
     padding-top:50px;
 }
+
 a{
     color:black;
     background-color: transparent;
     text-decoration: none;
 }
+.dropbtn {
+    background-color: #8c2eca;
+    color: black;
+    padding: 2px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bd7de7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:15px;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+  p{
+    padding-top:20px;
+    font-family: 'Josefin Sans', sans-serif;
 
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+  }
+  #_2{
+    height: 20px;
+    border-radius:50%;
+    margin-top:5px;
+  }
+  
+  #_3{
+    height:200px;
+  }
+#news-headlines{
+  background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+}
