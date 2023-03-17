@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) == 1) {
 	session_start();
 	$_SESSION['registration_no'] = $reg_no;
-	header('Location: index.html');
+	header('Location: protected_page.php');
 } else {
 	// Display error message if login is unsuccessful
  echo "<script> alert('Invalid login details. Please try again.') </script>";
