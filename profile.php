@@ -99,11 +99,11 @@ while ($row = $result->fetch_assoc()) {
         <td><?php echo $registration_no; ?></td>
       </tr>
       <tr>
-        <th>Registration Number</th>
+        <th>Course</th>
         <td><?php echo $course; ?></td>
       </tr>
       <tr>
-        <th>Registration Number</th>
+        <th>Branch</th>
         <td><?php echo $branch; ?></td>
       </tr>
       <tr>
