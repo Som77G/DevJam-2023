@@ -1,30 +1,36 @@
 <?php
+session_start();
   date_default_timezone_set('Asia/Kolkata');
-  $conn= mysqli_connect('localhost', 'root', '', 'commentsection');
+  $conn= mysqli_connect('localhost', 'root', '', 'register');
 
   if(!$conn){
       die("Connect failed: ".mysqli_connect_error());
    
   }
       function setComments($conn){
+        $registration_no = $_SESSION['registration_no'];
+        $sql1 = "SELECT * FROM login_data WHERE registration_no = '$registration_no'";
+        $result1 = $conn->query($sql1);
+while ($row = $result1->fetch_assoc()) {
+    $name = $row["name"];
+  }
          if (isset($_POST['commentSubmit'])){
-            $uid = $_POST['uid'];
             $date = $_POST['date'];
             $message = $_POST['message'];
      
-            $sql = "INSERT INTO comments (uid, date, message) VALUES ('$uid', '$date', '$message')";
+            $sql = "INSERT INTO comments (name,date, message) VALUES ('$name','$date', '$message')";
             $result = $conn->query($sql);
          
          } 
       }
-     
+   
       function getComments($conn){
-         $sql = "SELECT * FROM comments";
-         $result = $conn->query($sql);
-         while($row = $result->fetch_assoc()){
+// Fetch the data and store it in variables
+         $sql2 = "SELECT * FROM comments";
+         $result2 = $conn->query($sql2);
+         while($row = $result2->fetch_assoc()){
              echo "<div class= 'comment-box'>" ;
-             //echo $row['cid']."<br>";
-             echo $row['uid']."<br>";
+             echo $row['name']."<br>";
              echo $row['date']."<br>";
              echo nl2br($row['message'])."<br><br>";
              echo "</div>";
@@ -104,11 +110,9 @@ button{
                 <h1><u><i>Interact with other Users.</i></u></h1>
             </div>
             <br>
-            <a href='index.html'><b>| <- Go Back</b></a>
+            <a href='profile.php'><b>| <- Go Back</b></a>
             <br>
             <div class='name'>  
-                <p class='para'>Name: <input type='text' name='uid' required></p>
-                <br>
                 <input type='hidden' name='date' value='".date( 'Y-m-d H:i:s')."'>
                 <textarea name='message'> </textarea><br>
                 <button type='submit' name='commentSubmit'>Comment</button>
