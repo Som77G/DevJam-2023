@@ -44,13 +44,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["registration_no"] = $reg_no;
             $_SESSION["loggedin"] = true;
             echo "<script> alert('registered successfully.') </script>";
-            echo"<script> window.open('login.html','_self')</script>";
+            echo"<script> window.open('/html/login.html','_self')</script>";
         } else {
             echo "Error registering user: " . mysqli_error($conn);
         }
     } else {
         echo "<script> alert('Registration number already exists. Please use a different registration number.') </script>";
-        echo"<script> window.open('register.html','_self')</script>";
+        echo"<script> window.open('/html/register.html','_self')</script>";
     }
 }
 
