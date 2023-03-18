@@ -5,7 +5,7 @@ session_start();
 // Check if the user is logged in
 if (!isset($_SESSION['registration_no'])) {
   // If the user is not logged in, redirect them to the login page
-  header('Location: /php/login.php');
+  header('Location: login.php');
   exit();
 }
 
@@ -186,13 +186,13 @@ while ($row = $result->fetch_assoc()) {
 </head>
 <body>
 <header>
-        <img src="/images/download.svg" id="_1">
+        <img src="download.svg" id="_1">
 		<h1><u>PROFILE</u></h1>
 		<nav>
             <ul>
-                <a href="/php/update_profile.php">Update profile |</a>
-                <a href="/html/media.html">Media |</a>
-                <a href="/php/logout.php">Logout |</a>
+                <a href="update_profile.php">Update profile |</a>
+                <a href="media.html">Media |</a>
+                <a href="logout.php">Logout |</a>
                 
                 
             </ul>
@@ -200,7 +200,7 @@ while ($row = $result->fetch_assoc()) {
 	</header>
 
     <br><br>
-    <a href="/php/protected_page.php"> | <- Go Back</a>
+    <a href="protected_page.php"> | <- Go Back</a>
   <div class="container">
     <h1>Hello <?php echo $name; ?>!</h1>
     <p>This is your profile page.</p>
@@ -232,7 +232,7 @@ while ($row = $result->fetch_assoc()) {
       </tr>
     </table>
     <br>
-    <!-- <button onclick="window.location.href='/php/update_profile.php';" class="btn">Update</button> -->
+    <!-- <button onclick="window.location.href='update_profile.php';" class="btn">Update</button> -->
   </div>
   <footer>
         <p  class="f">College Committees &copy; MNNIT-Allahabad</p>
