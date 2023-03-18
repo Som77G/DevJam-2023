@@ -18,11 +18,11 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) == 1) {
 	session_start();
 	$_SESSION['registration_no'] = $reg_no;
-	header('Location: protected_page.php');
+	header('Location: /php/protected_page.php');
 } else {
 	// Display error message if login is unsuccessful
  echo "<script> alert('Invalid login details. Please try again.') </script>";
-            echo"<script> window.open('login.html','_self')</script>";
+            echo"<script> window.open('/html/login.html','_self')</script>";
 }
 
 // Close MySQL connection
