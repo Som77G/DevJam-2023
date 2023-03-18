@@ -1,5 +1,5 @@
 <?php
-$conn= mysqli_connect('localhost', 'root', '', 'joiningform');
+$conn= mysqli_connect('localhost', 'root', '', 'register');
 
 if(!$conn){
     die("Connect failed: ".mysqli_connect_error());
@@ -45,7 +45,7 @@ function setSubmit($conn) {
 	<link rel="stylesheet" href="joiningForm.css">
 </head>
 <body>
-	<a href="index.html"><b>| <- Go Back</b></a>
+	<a href="previous_page.php"><b>| <- Go Back</b></a>
     <br>
 	<h1>College Committee Joining Form</h1>
 	<?php
