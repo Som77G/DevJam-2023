@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Display a success message or error message
     if ($result) {
         echo "<script>alert('Profile updated successfully!')</script>";
-        echo"<script> window.open('profile.php','_self')</script>";
+        echo"<script> window.open('/php/profile.php','_self')</script>";
     } else {
         echo "<script>alert('Error updating profile. Please try again.')</script>";
     }
@@ -133,7 +133,7 @@ main{
     </div>
     </header>
     <br>
-    <a href="profile.php">| <- Go Back</a>
+    <a href="/php/profile.php">| <- Go Back</a>
     <form method="post">
         <label for="name">Name:</label>
         <input type="text" name="name" value="<?php echo $current_user['name']; ?>">
