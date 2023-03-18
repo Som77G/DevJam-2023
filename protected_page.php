@@ -13,6 +13,14 @@ if (!isset($_SESSION['registration_no'])) {
   header('Location: login.php');
   exit();
 }
+$registration_no = $_SESSION['registration_no'];
+$sql = "SELECT * FROM login_data WHERE registration_no = '$registration_no'";
+$result = $conn->query($sql);
+
+// Fetch the data and store it in variables
+while ($row = $result->fetch_assoc()) {
+  $name = $row["name"];
+}
 
 // If the user is logged in, display the protected page
 ?>
@@ -45,7 +53,7 @@ if (!isset($_SESSION['registration_no'])) {
                 <a href="media.html">Media |</a>
                 <a href="form2.html">Join A Committee |</a>
                 <span>
-                    <a href="profile.php"><img src="image5.png" id="_2"> | <?php echo $_SESSION['registration_no']; ?></a>
+                    <a href="profile.php"><img src="image5.png" id="_2"> | <?php echo $name ; ?></a>
                 <a href="logout.php" id="_3"> | Logout</a>
                 </span>
                 
