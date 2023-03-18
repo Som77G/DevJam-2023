@@ -186,7 +186,7 @@ while ($row = $result->fetch_assoc()) {
 </head>
 <body>
 <header>
-        <img src="download.svg" id="_1">
+        <img src="/images/download.svg" id="_1">
 		<h1><u>PROFILE</u></h1>
 		<nav>
             <ul>
