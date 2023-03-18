@@ -52,7 +52,7 @@ while ($row = $result->fetch_assoc()) {
                     </div>
                 </div>
                 <a href="media.html">Media |</a>
-                <a href="form2.html">Join A Committee |</a>
+                <a href="joiningForm.php">Join A Committee |</a>
                 <span>
                     <a href="profile.php"><img src="image5.png" id="_2"> | <?php echo $name ; ?></a>
                     <a href="comment.php">Chat |</a>
