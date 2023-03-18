@@ -54,7 +54,7 @@ h1 {
     background-color:rgb(15, 154, 124);
     color: #fff;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
   
   nav ul {
@@ -165,7 +165,8 @@ a{
   }
   
   #_3{
-    height:200px;
+    height:500px;
+    width:60%;
   }
 #news-headlines{
   background-color: #fff;
