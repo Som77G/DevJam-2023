@@ -48,12 +48,14 @@ while ($row = $result->fetch_assoc()) {
                       <a href="bhangra.html">| Bhangra Committee</a>
                       <a href="music.html">| Music Committee</a>
                       <a href="Rajasthani.html">| Rajasthani Committee</a>
+                      <a href="bengali.html">| Bengali Committee</a>
                     </div>
                 </div>
                 <a href="media.html">Media |</a>
                 <a href="form2.html">Join A Committee |</a>
                 <span>
                     <a href="profile.php"><img src="image5.png" id="_2"> | <?php echo $name ; ?></a>
+                    <a href="comment.php">Chat |</a>
                 <a href="logout.php" id="_3"> | Logout</a>
                 </span>
                 
