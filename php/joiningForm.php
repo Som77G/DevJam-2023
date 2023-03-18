@@ -45,10 +45,10 @@ function setSubmit($conn) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>College Committee Joining Form</title>
-	<link rel="stylesheet" href="joiningForm.css">
+	<link rel="stylesheet" href="/css/joiningForm.css">
 </head>
 <body>
-	<a href="previous_page.php"><b>| <- Go Back</b></a>
+	<a href="/php/previous_page.php"><b>| <- Go Back</b></a>
     <br>
 	<h1>College Committee Joining Form</h1>
 	<?php
