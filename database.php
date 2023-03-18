@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (mysqli_num_rows($result) == 0) {
-        // registration number is available, insert new user data
+        // registration number is not available, insert new user data
         $sql = "INSERT INTO login_data (name,registration_no,course,branch, phone_no, email_id, gender, password)
                 VALUES ('$name','$reg_no','$course','$branch', '$phone_no', '$email_id', '$gender', '$password')";
 
@@ -49,7 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Error registering user: " . mysqli_error($conn);
         }
     } else {
-        echo "Registration number already exists. Please use a different registration number.";
+        echo "<script> alert('Registration number already exists. Please use a different registration number.') </script>";
+        echo"<script> window.open('register.html','_self')</script>";
     }
 }
 
