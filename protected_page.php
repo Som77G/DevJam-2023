@@ -55,7 +55,7 @@ while ($row = $result->fetch_assoc()) {
                 <a href="joiningForm.php">Join A Committee |</a>
                 <span>
                     <a href="profile.php"><img src="image5.png" id="_2"> | <?php echo $name ; ?></a>
-                    <a href="comment.php">Chat |</a>
+                    <a href="comment.php">| Chat</a>
                 <a href="logout.php" id="_3"> | Logout</a>
                 </span>
                 
