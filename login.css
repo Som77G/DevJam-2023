@@ -9,6 +9,8 @@
   align-items: center;
 }
 
+
+
 #_1{
   float:left;
   height:55px;
@@ -35,7 +37,6 @@
 .new{
   display:flex;
   justify-content:center;
-  padding-bottom:163px;
 }
 
 a{
@@ -53,12 +54,16 @@ fieldset{
     margin: 20px;
     max-width: 400px;
 }
+.block{
+  padding-bottom:250px;
+}
 footer {
   background-color: #333;
-  color: #fff;
-  padding-bottom: 0px;
+  color:white;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 14px;
+  /* padding-top:300px; */
 }
 .f{
   padding-top:50px;
