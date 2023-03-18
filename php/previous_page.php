@@ -7,7 +7,7 @@ if (!isset($_SESSION['registration_no'])) {
     exit();
 }
 if(isset($_SESSION['registration_no'])) {
-    header('Location: /php/protected_page.php');
+    header('Location: protected_page.php');
     exit();
 }
 ?>
