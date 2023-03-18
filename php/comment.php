@@ -106,11 +106,11 @@ button{
     <?php
         echo "<form method='POST' action='".setComments($conn)."'>
             <div class='heading'>
-                <img src='/images/download.svg' id='_1'>
+                <img src='download.svg' id='_1'>
                 <h1><u><i>Interact with other Users.</i></u></h1>
             </div>
             <br>
-            <a href='/php/protected_page.php'><b>| <- Go Back</b></a>
+            <a href='protected_page.php'><b>| <- Go Back</b></a>
             <br>
             <div class='name'>  
                 <input type='hidden' name='date' value='".date( 'Y-m-d H:i:s')."'>
