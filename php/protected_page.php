@@ -36,7 +36,7 @@ while ($row = $result->fetch_assoc()) {
 <body>
     
     <header>
-        <img src="download.svg" id="_1">
+        <img src="/images/download.svg" id="_1">
 		<h1><u>Welcome to MNNIT Committees</u></h1>
 		<nav>
             <ul>
@@ -66,7 +66,7 @@ while ($row = $result->fetch_assoc()) {
     <br><br>
 
     <main>
-        <img src="image4.jpg" id="_3">
+        <img src="/images/MP_HALL.jpg" id="_3">
             <div id="news-headlines">
                 <h2>Latest News</h2>
                 <ul id="news-list">
