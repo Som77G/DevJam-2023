@@ -56,10 +56,91 @@ while ($row = $result->fetch_assoc()) {
       margin: 0;
       padding: 0;
     }
+    @media screen and (max-width: 768px) {
+    .heading {
+        height: 12vh;
+    }
+    
+    nav {
+        flex-direction: column;
+        height: 5vh;
+    }
+    
+    nav a {
+        padding: 5px;
+    }
+} 
+
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  h1 {
+    background-color:rgb(15, 154, 124);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align:center;
+    padding:20px 0px;
+    font-style:italic;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color:rgb(15, 154, 124);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    padding:10px;
+  }
+  
+  nav a:hover {
+    color: #f5f5f5;
+  }
+  
+
+#_1{
+    float:left;
+    height:120px;
+}
+#_2{
+    height: 20px;
+    border-radius:50%;
+    margin-top:5px;
+  }
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
+      padding-bottom: 200px;
     }
     h1 {
       margin-top: 0;
@@ -91,7 +172,7 @@ while ($row = $result->fetch_assoc()) {
         footer {
   background-color: #333;
   color: #fff;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 14px;
 }
@@ -101,11 +182,22 @@ while ($row = $result->fetch_assoc()) {
   </style>
 </head>
 <body>
-<div class="heading">
+<header>
         <img src="download.svg" id="_1">
-        <h1><u><i>Welcome To MNNIT</i></u></h1>
-    </div>
-    <br>
+		<h1><u>PROFILE</u></h1>
+		<nav>
+            <ul>
+                <a href="update_profile.php">Update profile |</a>
+                <a href="media.html">Media |</a>
+                <a href="comment.php">Chat |</a>
+                <a href="logout.php">Logout |</a>
+                
+                
+            </ul>
+        </nav>
+	</header>
+
+    <br><br>
     <a href="protected_page.php"> | <- Go Back</a>
   <div class="container">
     <h1>Hello <?php echo $name; ?>!</h1>
@@ -138,7 +230,7 @@ while ($row = $result->fetch_assoc()) {
       </tr>
     </table>
     <br>
-    <button onclick="window.location.href='update_profile.php';" class="btn">Update</button>
+    <!-- <button onclick="window.location.href='update_profile.php';" class="btn">Update</button> -->
   </div>
   <footer>
         <p  class="f">College Committees &copy; MNNIT-Allahabad</p>
