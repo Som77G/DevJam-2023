@@ -110,7 +110,7 @@ button{
                 <h1><u><i>Interact with other Users.</i></u></h1>
             </div>
             <br>
-            <a href='profile.php'><b>| <- Go Back</b></a>
+            <a href='protected_page.php'><b>| <- Go Back</b></a>
             <br>
             <div class='name'>  
                 <input type='hidden' name='date' value='".date( 'Y-m-d H:i:s')."'>
