@@ -128,7 +128,7 @@ main{
 <body>
 <header>
 <div class="heading">
-        <img src="download.svg" id="_1">
+        <img src="/images/download.svg" id="_1">
         <h1><u><i>UPDATE PROFILE</i></u></h1>
     </div>
     </header>
