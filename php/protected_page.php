@@ -10,7 +10,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check if the user is logged in
 if (!isset($_SESSION['registration_no'])) {
   // If the user is not logged in, redirect them to the login page
-  header('Location: /php/login.php');
+  header('Location: login.php');
   exit();
 }
 $registration_no = $_SESSION['registration_no'];
@@ -31,32 +31,32 @@ while ($row = $result->fetch_assoc()) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/css/protected_page.css">
+    <link rel="stylesheet" href="protected_page.css">
 </head>
 <body>
     
     <header>
-        <img src="/images/download.svg" id="_1">
+        <img src="download.svg" id="_1">
 		<h1><u>Welcome to MNNIT Committees</u></h1>
 		<nav>
             <ul>
-                <a href="/html/aboutus.html">About Us |</a>
+                <a href="aboutus.html">About Us |</a>
                 <div class="dropdown">
                     <button class="dropbtn">Committees |</button>
                     <div class="dropdown-content">
-                      <a href="/html/art.html" >| Arts Committee</a>
-                      <a href="/html/bhangra.html">| Bhangra Committee</a>
-                      <a href="/html/music.html">| Music Committee</a>
-                      <a href="/html/Rajasthani.html">| Rajasthani Committee</a>
-                      <a href="/html/bengali.html">| Bengali Committee</a>
+                      <a href="art.html" >| Arts Committee</a>
+                      <a href="bhangra.html">| Bhangra Committee</a>
+                      <a href="music.html">| Music Committee</a>
+                      <a href="Rajasthani.html">| Rajasthani Committee</a>
+                      <a href="bengali.html">| Bengali Committee</a>
                     </div>
                 </div>
-                <a href="/html/media.html">Media |</a>
-                <a href="/php/joiningForm.php">Join A Committee |</a>
+                <a href="media.html">Media |</a>
+                <a href="joiningForm.php">Join A Committee |</a>
                 <span>
-                    <a href="/php/profile.php"><img src="image5.png" id="_2"> | <?php echo $name ; ?></a>
-                    <a href="/php/comment.php">| Chat</a>
-                <a href="/php/logout.php" id="_3"> | Logout</a>
+                    <a href="profile.php"><img src="image5.png" id="_2"> | <?php echo $name ; ?></a>
+                    <a href="comment.php">| Chat</a>
+                <a href="logout.php" id="_3"> | Logout</a>
                 </span>
                 
             </ul>
@@ -66,7 +66,7 @@ while ($row = $result->fetch_assoc()) {
     <br><br>
 
     <main>
-        <img src="/images/MP_HALL.jpg" id="_3">
+        <img src="MP_HALL.jpg" id="_3">
             <div id="news-headlines">
                 <h2>Latest News</h2>
                 <ul id="news-list">
