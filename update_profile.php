@@ -66,7 +66,7 @@ main{
         }
         
         h1 {
-            margin-top: 0;
+            margin-top: 15px;
         }
         
         form {
@@ -126,9 +126,11 @@ main{
 <header>
 <div class="heading">
         <img src="download.svg" id="_1">
-        <h1><u><i>Welcome To MNNIT</i></u></h1>
+        <h1><u><i>UPDATE PROFILE</i></u></h1>
     </div>
     </header>
+    <br>
+    <a href="profile.php">| <- Go Back</a>
     <form method="post">
         <label for="name">Name:</label>
         <input type="text" name="name" value="<?php echo $current_user['name']; ?>">
