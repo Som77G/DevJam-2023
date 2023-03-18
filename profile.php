@@ -1,4 +1,3 @@
-</form>
 <?php
 // Start the session to check if the user is logged in
 session_start();
@@ -77,6 +76,28 @@ while ($row = $result->fetch_assoc()) {
     th {
       background-color: #f2f2f2;
     }
+    .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    .btn:hover {
+            background-color: #3e8e41;
+        }
+        footer {
+  background-color: #333;
+  color: #fff;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+.f{
+  padding-top:50px;
+}
   </style>
 </head>
 <body>
@@ -84,8 +105,9 @@ while ($row = $result->fetch_assoc()) {
         <img src="download.svg" id="_1">
         <h1><u><i>Welcome To MNNIT</i></u></h1>
     </div>
+    <br>
+    <a href="protected_page.php"> | <- Go Back</a>
   <div class="container">
-  <a href="protected_page.php"> | <- Go Back</a>
     <h1>Hello <?php echo $name; ?>!</h1>
     <p>This is your profile page.</p>
     
@@ -115,6 +137,11 @@ while ($row = $result->fetch_assoc()) {
         <td><?php echo $email_id; ?></td>
       </tr>
     </table>
+    <br>
+    <button onclick="window.location.href='update_profile.php';" class="btn">Update</button>
   </div>
+  <footer>
+        <p  class="f">College Committees &copy; MNNIT-Allahabad</p>
+    </footer>
 </body>
 </html>
