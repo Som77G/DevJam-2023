@@ -106,7 +106,7 @@ button{
     <?php
         echo "<form method='POST' action='".setComments($conn)."'>
             <div class='heading'>
-                <img src='download.svg' id='_1'>
+                <img src='/images/download.svg' id='_1'>
                 <h1><u><i>Interact with other Users.</i></u></h1>
             </div>
             <br>
