@@ -189,7 +189,6 @@ while ($row = $result->fetch_assoc()) {
             <ul>
                 <a href="update_profile.php">Update profile |</a>
                 <a href="media.html">Media |</a>
-                <a href="comment.php">Chat |</a>
                 <a href="logout.php">Logout |</a>
                 
                 
