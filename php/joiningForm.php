@@ -27,7 +27,7 @@ function setSubmit($conn) {
 
 	   if($result) {
 		echo "<script> alert('Form Submitted Successfully')</script>";
-		echo "<script>window.open('index.html')</script>";
+		echo "<script>window.open('protected_page.php')</script>";
 
 	   }
 	   else {
