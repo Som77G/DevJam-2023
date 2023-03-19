@@ -44,11 +44,11 @@ while ($row = $result->fetch_assoc()) {
                 <div class="dropdown">
                     <button class="dropbtn">Committees |</button>
                     <div class="dropdown-content">
-                      <a href="art.html" >| Arts Committee</a>
+                      <a href="Art.html" >| Arts Committee</a>
                       <a href="bhangra.html">| Bhangra Committee</a>
                       <a href="music.html">| Music Committee</a>
                       <a href="Rajasthani.html">| Rajasthani Committee</a>
-                      <a href="bengali.html">| Bengali Committee</a>
+                      <a href="Bengali.html">| Bengali Committee</a>
                     </div>
                 </div>
                 <a href="media.html">Media |</a>
@@ -66,7 +66,7 @@ while ($row = $result->fetch_assoc()) {
     <br><br>
 
     <main>
-        <img src="MP_HALL.jpg" id="_3">
+        <img src="MP_Hall.jpg" id="_3">
             <div id="news-headlines">
                 <h2>Latest News</h2>
                 <ul id="news-list">
