@@ -7,8 +7,7 @@
     justify-content: center;
     align-items: center;
     font-style: italic;
-     position: sticky;
-    top: 0px;
+   
   }
   
   * {
@@ -67,9 +66,13 @@
     padding-bottom:50px;
   }
   .feedback-block{
-    padding-bottom:50px;
+    padding-bottom:50px; 
     
   }
+.ab{
+  position: sticky;
+  top: 0px;
+}
   legend{
     font-style:italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
