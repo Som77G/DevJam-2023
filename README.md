@@ -17,12 +17,11 @@ Project is created with:
 * CSS
 * JavaScript
 * PHP 
-* MySQL
+* MySQL (for database)
 * XAMPP Server.
 
 ## Hardware Requirements:
 * You need to install XAMPP server application and set it up to create a localhost server on your system.
-* Additionally, you need to place all php files in the folder htdocs (in the folder XAMPP) so that localhost can fetch these files o its server.
 
 ## Files:
 The website includes the following files:
@@ -30,24 +29,33 @@ The website includes the following files:
 * index.css - The CSS file for the website.
 * news.js - The JavaScript file for the news section.
 * aboutus.html - The About Us page.
-* art.html, bhangra.html, music.html, Rajasthani.html - The pages for different committees.
-* media.html - The Media page.
-* form2.html - The Join A Committee page.
+* Art.html, bhangra.html, music.html, Rajasthani.html, Bengali.html - The pages for different committees.
+* register.html - The Registration page for new users.
 * login.html - The Login page.
-* download.svg, image4.jpg, image5.png - The images used in the website.
+* login.php - File to fetch login details from database.
+* previous_page.php - File to check if user is logged in or not.
+* protected_page.php - The main page visible to user after login.
+* profile.php, update_profile.php - The page that displays user profile/ to update user profile.
+* database.php - File to fetch/update data of user.
+* comment.php - The page for Chat section.
+* joiningForm.php - The Join A Committee page.
+* MP_HALL.jpg, download.svg, image3.jpg, image4.jpg, image5.png - The images used in the website.
 
 ## Setup:
 To set up this project on your system, follow these steps:
 * Download or clone the project files to your local system.
-* Install a web server software such as Apache, Nginx, or XAMPP.
+* Install the web server software XAMPP.
 * Move the downloaded project files to the web server's root directory.
+* Now, copy all files present inside folder css, html, php and images out of the folder to the htdocs folder.
 * Start the web server software and make sure it's running.
-* Open your web browser and navigate to http://localhost or http://127.0.0.1.
+* Open your web browser and navigate to http://localhost.
 You should now see the homepage of the MNNIT Committees website.
 
-* If you're using XAMPP, the root directory is usually located at C:\xampp\htdocs. You can simply move the downloaded project files to this directory and access the website by navigating to http://localhost/ on your web browser.
+* In XAMPP, the root directory is usually located at C:\xampp\htdocs. You can simply move the downloaded project files to this directory and access the website by navigating to http://localhost/ on your web browser.
 
 Note that the website uses a stylesheet and a JavaScript file located in the project directory, so make sure to keep those files in the same directory as the HTML file.
+
+You can also use this link to directly open the website on browser - https://collegecommitees.000webhostapp.com/index.html
 
 ## Contributing:
 Contributions to the website are welcome. If you find a bug or have an idea for an improvement, feel free to open an issue or create a pull request.
